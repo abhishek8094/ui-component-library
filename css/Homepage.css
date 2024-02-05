@@ -1,0 +1,148 @@
+/* Main section  */
+.main{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-side {
+  width: 630px;
+  margin: 30px 0;
+}
+
+h1{
+  font-size: 40px;
+  color: rgb(0, 179, 255);
+  font-weight: 700;
+  box-shadow: 0px 0px 30px lightblue;
+  margin: 20px;
+  padding: 10px;
+}
+
+p{
+  font-size: 18px;
+  color: rgb(231, 10, 194);
+  font-weight: bold;
+  padding: 30px;
+}
+
+h2{
+  color: rgb(10, 66, 231);
+  font-weight: bold;
+  padding: 30px;
+}
+
+#btn{
+  width: 160px;
+  height: 48px;
+  font-size: 20px;
+  margin: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #dca5ff;
+  box-shadow: 0 9px #000000;
+}
+
+#btn:hover{
+  background-color: #f41f6aed;
+}
+
+#btn:active{
+  background-color: #f41f6aed;
+  box-shadow: 0 5px #666 ;
+  transform: translateY(4px);
+}
+
+#arrow-right{
+  position: absolute;
+  padding: 8px;
+  margin: 0 2px;
+  gap: 4px;
+}
+
+.right-side img {
+  width: 480px;
+  height: 450px;
+  transform: rotateY(360deg);
+  margin-bottom: 80px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+/*  2nd Main Section  CSS Start  */
+.center-content{
+  text-align: center;
+}
+
+#fire{
+  font-size: 50px;
+}
+
+#para{
+  padding: 0;
+}
+
+#CDN {
+  margin-top:30px;
+  margin-left: 60px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#CDN i{
+  font-size: 30px;
+}
+
+#CDN h2{
+  padding: 0;
+}
+
+#cdn-para{
+  padding: 0;
+}
+
+hr{
+  height: 4px;
+  background-color: #aa045f;
+}
+
+h3{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.css-link{
+  text-align: center;
+}
+
+.JS-link{
+  margin-left: 60px;
+}
+
+.copypaste-link{
+  overflow: auto;
+}
+
+/* footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: #aa045f;
+}
+
+#footer-para {
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+#arrow-up{
+  position: absolute;
+  font-size: 35px;
+  right: 10px;
+  margin: 0 30px;
+}
+

@@ -1,0 +1,136 @@
+
+.Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left-container{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.Right-container{
+    width: 85%;
+    margin-left: 15px ; 
+    overflow-y: scroll;
+}
+
+#documentation{
+    font-size: 23px;
+}
+
+.top{
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.para{
+    margin: 5px 40px;
+    padding: 0;
+    color: blue;
+    font-size: 18px;
+}
+
+.get-started{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}    
+
+.Top-link a{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-size:20px ;
+    justify-content: center;
+    align-items: center;
+}
+
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.component a{
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.component a:hover{
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Right Container  */
+
+.Right-container{
+    margin-top: 80px;
+}
+
+h4{
+    background-color: aqua;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.div{
+    display: flex;
+    justify-content: space-around;
+}
+
+h5{
+   margin:0 30px ;
+   font-size: 30px;
+}
+
+#navimg{
+    width: 90%;
+    margin-left: 25px;
+}
+
+#mobile{
+    margin-left: 25px;
+}
+
+.left-div ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+.index{
+    overflow: auto;
+}
+
+.browser ul {
+    margin: 25px;
+    padding:0 60px;
+}
+
+#webimg{
+    width: 300px;
+    height: 250px ;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+@media (max-width:900px) {
+    ul{
+        margin: 10px;
+    }
+    #webimg{
+        display: none;
+    }
+
+}
+

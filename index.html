@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI:Component Library</title>
+  <link rel="stylesheet" media="only screen  and (max-width: 1100px)" href="../css/Responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="icon" href="../images/logo.png" />
+  <link rel="stylesheet" href="../css/Homepage.css">
+  <script src="https://kit.fontawesome.com/7f3b97eace.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar start  -->
+  <div class="navbar">
+    <div class="navbarlogo">
+      <a href="./index.html"><img src="../images/logo.png" alt="navlogo" id="navlogo" /></a>
+    </div>
+
+    <div class="navlist">
+      <a href="./index.html">Home</a>
+      <a href="#about" ">About</a>
+      <a href=" #Blog">Blog</a>
+      <a href="./doc.html">Docs</a>
+    </div>
+
+    <div class="searchbar">
+      <button id="magnifying-glass"><i class="fa fa-search"></i></button>
+      <input type="search" id="search" placeholder="Search..." />
+    </div>
+
+    <div class="socialmedia-link">
+      <a href=""><i class="fa fa-github"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="icon" id="hamburger" onclick="showSidebar()">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div id="cross" onclick="hideSidebar()">
+      <i class="fa fa-close"></i>
+    </div>
+  </div>
+  <!-- Navbar end  -->
+
+  <!-- Main Section Start  -->
+  <main class="main section ">
+    <div class="left-side">
+      <h1> Creating responsive websites to use this Component library </h1>
+      <p>It is a modular and organized set of pre-built components that developers can use to quickly and efficiently
+        assemble user interfaces. Each component within the library is a standalone entity with well-defined behavior,
+        styling, and often includes customizable properties.</p>
+      <p>This is very easy to use , understable and enjoyable library.</p>
+      <h2>So Let's go....</h2>
+
+      <button id="btn"><a href="./doc.html">Explore <i class="fa-solid fa-circle-arrow-right"
+            id="arrow-right"></i></a></button>
+
+
+    </div>
+
+    <div class="right-side">
+      <img src="../images/rightside-pic.jpg" alt="rightimg" />
+    </div>
+  </main>
+  <!-- Main Section End  -->
+
+  <!-- 2nd Main Section Start -->
+  <main class="second-section">
+    <div class="center-content">
+      <div id="fire">🔥</div>
+      <h3>Get started any way you want</h3>
+      <p id="para">Jump right into building with UI-Cmponent_Library-- use the CDN</p>
+    </div>
+
+    <div id="CDN">
+      <i class="fa-solid fa-globe"></i>
+      <h2>Include via CDN</h2>
+      <p id="cdn-para">Looking to quickly add UI-Component_library to your project? Use this free open source CDN.</p>
+    </div>
+
+    <hr>
+    <div class="css-link">
+      <h2>CSS Link</h2>
+      <div class="copypaste-link">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=css&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252FUI_component-library-1234.netlify.app%252Fstyle%252Fstyle%252FUI_Component-library.css%2522%253E"
+          style="width: 968px; height: 196px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="JS-link">
+      <h2>JS Link</h2>
+      <div class="copypaste-link">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=css&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%253Cscript%2520src%253D%2522https%253A%252F%252FUI_Component-library-1234.netlify.app%252Fjs%252Fjs%252FUI_Component_library.js%2522%2520%253E%253C%252Fscript%253E"
+          style="width: 968px; height: 213px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+  <!-- 2nd Main Section end -->
+
+  <!-- footer start -->
+  <footer>
+    <p id="footer-para">@Copyright: 2024 UI- COMPONENTS_LIBRARY. All Reseved. <i class="fa-solid fa-circle-arrow-up"
+        id="arrow-up" onclick="topFunction()"></i></p>
+  </footer>
+
+  <!-- footer End -->
+
+  <script src="../logic/Logic.js"></script>
+</body>
+
+</html>

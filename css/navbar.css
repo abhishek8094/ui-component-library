@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trirong", serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --white:whitesmoke;
+  }
+  
+  .navbar {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #aa045f;
+  }
+  
+  .navbarlogo img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .navlist a {
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--white);
+    margin: 0 8px;
+  }
+  
+  .navlist a:hover {
+    background-color: black;
+    padding: 0 2px;
+    color: var(--white);
+    border-radius: 8px;
+  }
+  
+  .searchbar{
+    background-color: var(--white);
+    border-radius: 4px;
+    display: block;
+  }
+  
+  #magnifying-glass{
+    font-size: 20px;
+    padding: 6px;
+    margin: 0 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button i{
+    margin-top: 2px;
+  }
+  
+  #search {
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .socialmedia-link a  {
+    margin: 0 10px;
+    font-size: 30px;
+  }
+  
+  .socialmedia-link a i{
+    text-align: center;
+    color: var(--white);
+    padding: 5px;
+    margin-top: 15px;
+  }
+  
+  .socialmedia-link a :hover {
+    background-color: black;
+    border-radius: 6px;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  #cross {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+
+  

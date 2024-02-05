@@ -1,0 +1,36 @@
+.alert {
+    padding: 20px;
+    color: rgb(5, 5, 5);
+    opacity: 1;
+    background-color: rgb(247, 165, 240);
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+
+.alert.success {
+    background-color: #04AA6D;
+}
+
+.alert.info {
+    background-color: #07ffc1;
+}
+
+.alert.warning {
+    background-color: #ff9800;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    overflow: hidden;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}

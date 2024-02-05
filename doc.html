@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI:Component Library</title>
+  <link rel="stylesheet" media="only screen  and (max-width: 1100px)" href="../css/Responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="icon" href="../images/logo.png" />
+  <link rel="stylesheet" href="../css/Alert.css">
+  <link rel="stylesheet" href="../css/Homepage.css">
+  <link rel="stylesheet" href="../css/Avatar.css">
+  <link rel="stylesheet" href="../css/Input.css">
+  <link rel="stylesheet" href="../css/docs.css">
+  <link rel="stylesheet" href="../css/Badge.css">
+  <link rel="stylesheet" href="../css/Button.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/Model.css">
+  <link rel="stylesheet" href="../css/list.css">
+  <link rel="stylesheet" href="../css/Snackbar.css">
+  <link rel="stylesheet" href="../css/Rating.css">
+  <link rel="stylesheet" href="../css/Grid.css">
+  <script src="https://kit.fontawesome.com/7f3b97eace.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar start  -->
+  <div class="navbar">
+    <div class="navbarlogo">
+      <a href="./index.html"><img src="../images/logo.png" alt="navlogo" id="navlogo" /></a>
+    </div>
+
+    <div class="navlist">
+      <a href="./index.html">Home</a>
+      <a href="#about" ">About</a>
+      <a href=" #Blog">Blog</a>
+      <a href="./doc.html">Docs</a>
+    </div>
+
+    <div class="searchbar">
+      <button id="magnifying-glass"><i class="fa fa-search"></i></button>
+      <input type="search" id="search" placeholder="Search..." />
+    </div>
+
+    <div class="socialmedia-link">
+      <a href=""><i class="fa fa-github"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="icon" id="hamburger" onclick="showSidebar()">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div id="cross" onclick="hideSidebar()">
+      <i class="fa fa-close"></i>
+    </div>
+  </div>
+  <!-- Navbar end  -->
+
+  <!-- Container  -->
+  <div class="Container">
+
+    <div class="left-container">
+      <p id="documentation">Documentation</p>
+      <div class="Top-link">
+        <p class="top">Getting Started</p>
+        <a href="" class="active">Introduction</a>
+        <a href="#Install">Installation</a>
+        <a href="#Browser">Browser</a>
+      </div>
+
+      <hr style="margin: 10px;">
+      <div class="component">
+        <p class="top">Components</p>
+        <a href="#Avatar">Avatar</a>
+        <a href="#Alert">Alert</a>
+        <a href="#Badge">Badge</a>
+        <a href="#button">Button</a>
+        <a href="#Card">Card</a>
+        <a href="#Image">Image</a>
+        <a href="#Input">Input</a>
+        <a href="#Text">Text Utility</a>
+        <a href="#Navigation">Navigation</a>
+        <a href="#List">List</a>
+        <a href="#Modal">Modal</a>
+        <a href="#Snackbar">Snackbar</a>
+        <a href="#Rating">Rating</a>
+        <a href="#Grid">Grid</a>
+      </div>
+
+    </div>
+
+    <div class="Right-container">
+      <div class="Intro">
+        <h4 id="welcome">WELCOME</h4>
+        <p class="para">Welcome to the our documentation ! We allow you to make beautiful, modern, and fast
+          websites/applications
+          regardless of your design experience.</p>
+        <div class="div">
+          <div class="left-div">
+            <h5>A forward-thinking library of web components.</h5>
+            <ul>
+              <li>1.Works with all frameworks ✨</li>
+              <li>2.Works with CDNs 🎁</li>
+              <li>3.Fully customizable with CSS😎</li>
+              <li>4.Includes a dark theme🖤</li>
+              <li>5.Built with accessibility in mind 💢</li>
+              <li>6.Open source <span style="color: red;">❤</span> </li>
+            </ul>
+
+            <p>Designed By Abhishek Singh💻</p>
+          </div>
+
+          <div class="right-div">
+            <img src="../images/webimg.jpg " id="webimg">
+          </div>
+        </div>
+
+        <div class="second-container">
+          <h4>Quick Start</h4>
+          <p class="para">Get started by including production-ready CSS and JavaScript via CDN links without the need
+            for
+            any build steps.</p>
+          <p class="para">1.Create a new index.html file in your project root. Include the
+            <meta name="viewport"> tag as well for proper responsive behavior in mobile devices.
+          </p>
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%253C%21doctype%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%2520%2520%2520%2520%253Chead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522utf-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctilte%253EUI-Component%2520library%2520demo%2520%253C%252Ftilte%253E%250A%2520%2520%2520%2520%253C%252Fhead%253E%250A%2520%2520%2520%2520%253Cbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EHello%2520world%21%253C%252Fh1%253E%250A%2520%2520%2520%2520%253C%252Fbody%253E%250A%253C%252Fhtml%253E"
+              style="width: 1024px; height: 473px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+          <p class="para">2.Include CSS and JS links . &Place the tag in the for our CSS, and the tag for our JavaScript
+            bundle before the closing
+          </p>
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%253C%21doctype%2520html%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%2520%2520%2520%2520%253Chead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522utf-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctilte%253EUI-Component%2520library%2520demo%2520%253C%252Ftilte%253E%250A%2520%2520%2520%2520%253C%252Fhead%253E%250A%2520%2520%2520%2520%253Cbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253EHello%2520world%21%253C%252Fh1%253E%250A%2520%2520%2520%2520%253C%252Fbody%253E%250A%253C%252Fhtml%253E"
+              style="width: 1024px; height: 473px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- installation Part  -->
+      <div class="install" id="Install">
+        <h4>How to install ?</h4>
+        <p class="para">To use all features, Just Add CDN link of CSS and JS in <span style="color: red;">Head</span>
+          tag of <span style="color: red;">index.html</span> file. After
+          adding CDN links Just search for your UI like navbar, button, form etc in WebHelpUI components and Copy the
+          HTML code given then add the code in your HTML file where you want to add this UI.</p>
+
+        <h5>CDN Link</h5>
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=css&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fui-component-library-123.netlify.app%252Fstyle%252Fstyle%252FuiComponentLibrary.min.css%2522%253E"
+            style="width: 968px; height: 196px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Browser  -->
+      <div class="browser" id="Browser">
+        <h4>Browsers and devices</h4>
+        <p class="para">It is supported in all Browsers and all devices.</p>
+        <h5>Supported Browser</h5>
+        <ul>
+          <li>•Brave</li>
+          <li>•Chrome</li>
+          <li>•Safari</li>
+          <li>•Microsoft Edge</li>
+          <li>•Opera</li>
+          <li>•Android and Desktop</li>
+        </ul>
+        <h5>Responsiveness</h5>
+        <p class="para">A great way to create a responsive design, is to use a responsive style sheet, like
+          uiComponentLibrary.use.css. </p>
+        <!-- <p class="para">It make it easy to develop sites that look nice at any size!</p> -->
+        <p class="para">All UI which you will use from these UI components is fully responsive and changes according to
+          the screen size.</p>
+        <p>Let's Take an Exapmle of Navbar in Desktop and Mobile</p>
+
+        <h5>Desktop</h5>
+        <img src="../images/navbar.png" id="navimg">
+        <h5>Mobile & Tablets</h5>
+        <img src="../images/tablet.png" id="mobile">
+
+        <h5>Devices</h5>
+        <p class="para">We have devided all the devices into two categories based on their screen width.</p>
+
+        <ul>
+          <li>•Mobile Devices( width < 780px)</li>
+          <li>•Tablets(780px < width < 980px)</li>
+          <li>•Desktop( width > 980px )</li>
+        </ul>
+
+      </div>
+
+
+      <!--All Component  Wala Part -->
+
+      <!-- Avatar Part  -->
+      <div class="avtar" id="Avatar">
+        <h4>Avatar</h4>
+
+        <div class="avatar-img">
+          <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+          <img src="../images/avatar.jpg" alt="Avatar" class="avatar">
+        </div>
+
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522img_avatar.png%2522%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522img_avatar2.png%2522%2520alt%253D%2522Avatar%2522%2520class%253D%2522avatar%2522%253E%250A"
+            style="width: 968px; height: 251px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Alert  -->
+      <div class="alert" id="Alert">
+        <h4>Alert</h4>
+        <p class="para">UI-component library provides an easy way to create predefined alert messages:</p>
+        <div class="All-Alert">
+          <div class="alert">
+            <span class="closebtn">&times;</span>
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+          </div>
+
+          <div class="alert success">
+            <span class="closebtn">&times;</span>
+            <strong>Success!</strong> Indicates a successful or positive action.
+          </div>
+
+          <div class="alert info">
+            <span class="closebtn">&times;</span>
+            <strong>Info!</strong> Indicates a neutral informative change or action.
+          </div>
+
+          <div class="alert warning">
+            <span class="closebtn">&times;</span>
+            <strong>Warning!</strong> Indicates a warning that might need attention.
+          </div>
+
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EDanger%21%253C%252Fstrong%253E%2520Indicates%2520a%2520dangerous%2520or%2520potentially%2520negative%2520action.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253ESuccess%21%253C%252Fstrong%253E%2520Indicates%2520a%2520successful%2520or%2520positive%2520action.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EInfo%21%253C%252Fstrong%253E%2520Indicates%2520a%2520neutral%2520informative%2520change%2520or%2520action.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522closebtn%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cstrong%253EWarning%21%253C%252Fstrong%253E%2520Indicates%2520a%2520warning%2520that%2520might%2520need%2520attention.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+              style="width: 968px; height: 714px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Badge  -->
+      <div class="badge" id="Badge">
+        <h4>Badge</h4>
+
+        <span class="all-badge">New</span>
+        <span class="all-badge">ok</span>
+        <span class="all-badge">Bye</span>
+        <span class="all-badge">Tata</span>
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522all-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522all-badge%2522%253Eok%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522all-badge%2522%253EBye%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522all-badge%2522%253ETata%253C%252Fspan%253E"
+            style="width: 968px; height: 278px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+
+
+      </div>
+
+      <!-- Buttons Part  -->
+      <div class="Btn" id="button">
+        <h4>Buttons</h4>
+        <p class="para">Buttons are very important part of any website because buttons can link all the things and
+          gives
+          a good user experience.</p>
+        <p class="para">Ui-Component-library provides different categories of buttons, you can pick any of them
+          according
+          to your requirement</p>
+
+        <ol>
+          <li>1.Rounded Buttons</li>
+          <li>2.Hoverable Buttons</li>
+        </ol>
+
+        <div class="Rounded-buttons">
+          <h4>Rounded Buttons</h4>
+          <p>These buttons are build with button tag so you can add link here also</p>
+          <div class="All-rounded-buttons">
+            <button class="button button1">2px</button>
+            <button class="button button2">4px</button>
+            <button class="button button3">8px</button>
+            <button class="button button4">12px</button>
+            <button class="button button5">50%</button>
+          </div>
+
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button1%2522%253E2px%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button2%2522%253E4px%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button3%2522%253E8px%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button4%2522%253E12px%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button5%2522%253E50%2525%253C%252Fbutton%253E"
+              style="width: 968px; height: 305px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+
+        </div>
+
+        <div class="Hoverable">
+          <h4>Hoverable Buttons</h4>
+          <p>Use the :hover selector to change the style of a button when you move the mouse over it.</p>
+          <div class="All-Hoverable-buttons">
+            <button class="Hover one-button">Green</button>
+            <button class="Hover sec-button">Blue</button>
+            <button class="Hover third-button">Red</button>
+            <button class="Hover four-button">Gray</button>
+            <button class="Hover five-button">Black</button>
+          </div>
+
+          <div class="index">
+            <iframe <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522Hover%2520one-button%2522%253EGreen%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522Hover%2520sec-button%2522%253EBlue%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522Hover%2520third-button%2522%253ERed%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522Hover%2520four-button%2522%253EGray%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522Hover%2520five-button%2522%253EBlack%253C%252Fbutton%253E"
+              style="width: 968px; height: 305px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </iframe>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+      <!-- Card Part  -->
+
+      <!-- Image  -->
+
+      <!-- Input Part  -->
+      <div class="input" id="Input">
+        <h4>Input</h4>
+        <div class="input-fields">
+          <h5>Padded input fields</h5>
+          <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+          </form>
+
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522fname%2522%253EFirst%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522fname%2522%2520name%253D%2522fname%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522lname%2522%253ELast%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522lname%2522%2520name%253D%2522lname%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 968px; height: 333px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="input-fields">
+          <h5>Bordered Input</h5>
+          <form>
+            <label for="first-n">First Name</label>
+            <input type="in" id="first-n" name="first-n">
+            <label for="last-n">Last Name</label>
+            <input type="in" id="last-n" name="last-n">
+          </form>
+
+          <div class="index">
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cform%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522first-n%2522%253EFirst%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522in%2522%2520id%253D%2522first-n%2522%2520name%253D%2522first-n%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522last-n%2522%253ELast%2520Name%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522in%2522%2520id%253D%2522last-n%2522%2520name%253D%2522last-n%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fform%253E"
+              style="width: 968px; height: 333px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
+      <div class="navigation" id="Navigation">
+        <h4>Navigation</h4>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+
+
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cnav%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EAbout%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EServices%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EContact%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fnav%253E"
+            style="width: 968px; height: 350px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- list -->
+      <div class="list" id="List">
+        <h4>List</h4>
+
+        <p class="para">Example of unordered lists:</p>
+        <ul class="a">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+
+        <ul class="b">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ul>
+
+        <p class="para">Example of ordered lists:</p>
+        <ol class="c">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ol>
+
+        <ol class="d">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Coca Cola</li>
+        </ol>
+
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EExample%2520of%2520unordered%2520lists%253A%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522a%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoffee%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ETea%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoca%2520Cola%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522b%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoffee%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ETea%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoca%2520Cola%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EExample%2520of%2520ordered%2520lists%253A%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Col%2520class%253D%2522c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoffee%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ETea%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoca%2520Cola%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fol%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Col%2520class%253D%2522d%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoffee%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ETea%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253ECoca%2520Cola%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fol%253E"
+            style="width: 968px; height: 867px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Snackbar  -->
+      <div class="snackbar" id="Snackbar">
+        <h4>Snackbar</h4>
+        <p class="para">Click on the button to show the snackbar. It will disappear after 3 seconds.</p>
+
+        <button onclick="myFunction()" id="show-btn">Show Snackbar</button>
+        <div id="snackbar">Some text some message..</div>
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520onclick%253D%2522myFunction%28%29%2522%253EShow%2520Snackbar%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522snackbar%2522%253ESome%2520text%2520some%2520message..%253C%252Fdiv%253E"
+            style="width: 968px; height: 241px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+
+      <!-- Model  -->
+
+
+      <!-- Rating  -->
+      <div class="rating" id="Rating">
+        <h4>Rating</h4>
+        <p class="para">Having easy-to-use navigation is important for any web site.</p>
+
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5"></label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4"></label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3"></label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2"></label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1"></label>
+        </div>
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star5%2522%2520name%253D%2522rating%2522%2520value%253D%25225%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star5%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star4%2522%2520name%253D%2522rating%2522%2520value%253D%25224%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star4%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star3%2522%2520name%253D%2522rating%2522%2520value%253D%25223%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star3%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star2%2522%2520name%253D%2522rating%2522%2520value%253D%25222%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star2%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520id%253D%2522star1%2522%2520name%253D%2522rating%2522%2520value%253D%25221%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522star1%2522%253E%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 968px; height: 513px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Grid  -->
+      <div class="grid" id="Grid">
+        <h4>Grid</h4>
+        <p class="para">The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it
+          easier to
+          design web pages without having to use floats and positioning.</p>
+
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div>
+          <div class="grid-item">8</div>
+          <div class="grid-item">9</div>
+        </div>
+
+        <div class="index">
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=night-owl&wt=sharp&l=htmlmixed&width=968.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=12.5px&lh=218%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E1%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E3%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E5%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E6%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E7%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E8%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-item%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+            style="width: 968px; height: 486px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <!-- footer start -->
+  <footer>
+    <p id="footer-para">@Copyright: 2024 UI- COMPONENTS_LIBRARY. All Reseved. <i class="fa-solid fa-circle-arrow-up"
+        id="arrow-up" onclick="topFunction()"></i></p>
+  </footer>
+
+  <!-- footer End -->
+  <script src="../logic/Snackbar.js"></script>
+  <script src="../logic/Alert.js"></script>
+  <script src="../logic/Logic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.navbar{
+
+    .navlist{
+        margin-top: -14px;
+    }
+
+    .navlist{
+        display: none;
+    }
+
+    .socialmedia-link{
+        display: none;
+    }
+
+    .searchbar{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+    }
+
+    flex-direction: column;
+}
+
+/* main-section  */
+
+p{
+    font-size: 5px;
+    margin: 0;
+}
+
+.right-side{
+    display: none;
+}
+
+
+/* footer  */
+#footer-para{
+  line-height: 30px;
+}
+
+
+
+
+
+
+
